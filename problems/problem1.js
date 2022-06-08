@@ -8,9 +8,13 @@ const countries = file.toString().split('\n');
 // Input: List of countries
 // Output: Countries that have "United"
 
+// Introduce Lines
+
 function solve(){
 	// Initializing 
-	const result = [];
+	const result = []; 
+	
+	countries.forEach()
 	// Loop through countries
 	for(let country of countries){
 		// if country includes "United"
