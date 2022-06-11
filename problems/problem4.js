@@ -17,8 +17,8 @@ function solve(){
 		// else if country length is shorter than "shortest" and "shortest" is null
 		// recreate the result array and with the country inside
 		}else	if(country.length < shortest || shortest === null){
-			shortest = country.length
-			result = [country]
+			shortest = country.length;
+			result = [country];
 		} 
 	}
 

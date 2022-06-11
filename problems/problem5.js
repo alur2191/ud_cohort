@@ -1,6 +1,6 @@
-const fs = require('fs')
-const file = fs.readFileSync('../countries.txt')
-const countries = file.toString().toLowerCase().split('\n')
+const fs = require('fs');
+const file = fs.readFileSync('../countries.txt');
+const countries = file.toString().toLowerCase().split('\n');
 
 // Problem: Given a list of countries, find all countries which have only one vowel (duplicates allowed).
 // Inputs: List of countries.
@@ -9,7 +9,7 @@ const countries = file.toString().toLowerCase().split('\n')
 // TRY TO SOLVE WITH STRINGS
 
 
-// Attempt #4
+// Attempt #5
 // function solution4(){
 // 	const result = [];
 // 	const vowels = 'aeiou'
@@ -31,20 +31,20 @@ const countries = file.toString().toLowerCase().split('\n')
 // 	return result.length
 // }
 
-// // Attempt #3
+// // Attempt #4
 function solution3(){
 	const result = [];
 	// loop through countries
 	for(let country of countries){
-		let vowels = 0
+		let vowels = 0;
 		// If vowel included, increment vowels
-		country.includes('a') && vowels++
-		country.includes('e') && vowels++ 
-		country.includes('i') && vowels++
-		country.includes('o') && vowels++
-		country.includes('u') && vowels++
+		country.includes('a') && vowels++;
+		country.includes('e') && vowels++;
+		country.includes('i') && vowels++;
+		country.includes('o') && vowels++;
+		country.includes('u') && vowels++;
 		// if vowels = 1, add country to result
-		vowels === 1 && result.push(country)
+		vowels === 1 && result.push(country);
 	}
 
 	return result.length
@@ -53,7 +53,7 @@ function solution3(){
 console.log(solution3());
 
 
-// Attempt #2
+// Attempt #3
 
 // function solution2(){
 // 	const result = [];
@@ -106,7 +106,7 @@ console.log(solution3());
 
 // Attempt 2
 function solution2(countries) {
-	let result = []
+	let result = [];
   // Loop through countries
 	for(let country of countries){
 		let lastSeenVowel = null;
@@ -119,7 +119,7 @@ function solution2(countries) {
 				// if lastSeenVowel != letter and lastSeenVowel != null
 
 				if(lastSeenVowel != country[i] && lastSeenVowel != null){
-					break
+					break;
 				}
 			}
 		}

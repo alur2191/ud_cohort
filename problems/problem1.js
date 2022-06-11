@@ -13,19 +13,23 @@ const countries = file.toString().split('\n');
 function solve(){
 	// Initializing 
 	const result = []; 
-	
-	countries.forEach()
-	// Loop through countries
 	for(let country of countries){
-		// if country includes "United"
-		if(country.includes("United")){
-			// add to result
-			result.push(country);
-		}
-		// if doesn't include "United", it won't be added to result array
+			// if country includes "United"
+			if(country.includes("United")){
+				// add to result
+				result.push(country);
+			}
+		return result;
 	}
-
-	return result;
 }
-
 console.log(solve());
+
+	// // Loop through countries
+	// for(let country of countries){
+	// 	// if country includes "United"
+	// 	if(country.includes("United")){
+	// 		// add to result
+	// 		result.push(country);
+	// 	}
+	// 	// if doesn't include "United", it won't be added to result array
+	// }

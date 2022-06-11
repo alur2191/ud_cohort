@@ -1,5 +1,5 @@
 const fs = require('fs');
-const file = fs.readFileSync("../countries.txt");
+const file = fs.readFileSync('../countries.txt');
 const countries = file.toString().toLowerCase().split('\n')
 
 // Problem: What countries both begin and end with a vowel?
