@@ -3,7 +3,6 @@
 function findWordsWithA(word){
 	let counter = 0;
 	for(let y = 0; y < word.length; y++){
-		
 		word[y] === "A" && counter++;
 	}
 	return(`${counter} - ${word}`)

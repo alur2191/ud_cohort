@@ -10,7 +10,7 @@ const names = file.toString().split('\n');
 function longestNames(){
 	const result = [];
 	names.sort((a,b) => b.length - a.length);
-	names.forEach(name=>{
+	names.forEach(name => {
 		name.length === names[0].length && result.push(name);
 	})
 	return result;
