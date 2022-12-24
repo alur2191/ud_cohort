@@ -40,7 +40,7 @@ console.log(findWinner('1980'));
 
 
 function parseFile(file) {
-    const list = [];
+	const list = [];
 	for(let i = 0; i < winners.length; i++){
 		const curWinner = winners[i].split(',');
 		// add each team to an object and push each object into an list array
@@ -52,7 +52,7 @@ function parseFile(file) {
 		obj['mvp'] = curWinner[4];
 		list.push(obj)
 	}
-    return list
+	return list
 }
 
 // Use of sub-functions

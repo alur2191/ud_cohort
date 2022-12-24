@@ -5,8 +5,6 @@
 const fs = require('fs');
 const file = fs.readFileSync('../nba_finals.csv');
 
-
-
 function winnerForYear(soughtYear) {
     //  Parse the file
     const lines = file.toString().split(/\r?\n/);

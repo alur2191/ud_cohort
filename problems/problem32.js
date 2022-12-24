@@ -17,6 +17,7 @@ function determineTheWinner(score){
 function incrementTeamWin(score, a, b){
 	// Increment the count for each team that won
 	if(determineTheWinner(score)){
+		// teamWins[a] = (teamWins[a] ?? 0) + 1;
 		teamWins[a] = teamWins[a] ? teamWins[a] + 1 : 1;
 		teamWins[b] = teamWins[b] ? teamWins[a] + 0 : 0;
 	}else{

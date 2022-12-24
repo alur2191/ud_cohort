@@ -24,7 +24,7 @@
 // Explanation: The array represents the integer 9.
 // Incrementing by one gives 9 + 1 = 10.
 // Thus, the result should be [1,0].
- 
+
 
 // Constraints:
 
@@ -43,7 +43,7 @@
 //     let split = string.split('')
 //     for (let number of split) {
 //       result.push(parseInt(number))
-//     }
+//     
 //   return result
 // };
 
@@ -55,3 +55,12 @@ function plusOne(digits) {
   stringWholeNumber.forEach(number => result.push(parseInt(number)))
   return result
 }
+
+console.log(plusOne([2,9,9]));
+
+// function plusOne2(digits){
+// // Reversed the array [8, 8, 2]
+// if element 0 in the array is 0-8
+	// Increment element 0 [9, 8, 2] and reverse
+// else if element 0 === 9, change element 0 = 0
+// }

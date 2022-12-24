@@ -34,23 +34,25 @@ function solution3(){
   
 	const result = [];
 	const obj = {}
+
 	// loop through countries
 	for(let word of words){
+
 		let count = 0;
     let finalScore = 0;
 		// If vowel included, increment count
-		word.includes('s') && count++;
-		word.includes('p') && count++;
+		word.includes('s') && count++; 
+		word.includes('p') && count++; 
 		word.includes('c') && count++;
 		word.includes('q') && count++;
-		word.includes('e') && count++;
+		word.includes('e') && count++; 
 		word.includes('i') && count++;
 		word.includes('u') && count++;
 		// if count = 1, add word to result
         
     // if (scores[letter]){
 		// 	finalScore += scores[letter]
-		// }
+		// } 
 		if(count === word.length){
 			for(let i = 0; i < word.length; i++){
 				if (scores[word[i]]){
@@ -58,11 +60,15 @@ function solution3(){
 				}
 			}
 			
-			result.push(`${finalScore} ${word}`)
+			result.push({word,score:finalScore})
 		}
 	}
-	
-	return result.sort((a,b)=>b-a)
+	let final = [];
+	result.sort((a,b)=>b.score-a.score)
+	for(let i =0; i < result.length; i++){
+		final.push(`${result[i].score} ${result[i].word}`)
+	}
+	console.log(final);
 }
 
 console.log(solution3());
